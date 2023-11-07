@@ -20,6 +20,8 @@ Gibbly the virtual pet!
 
 ## Version History
 
+- 0.3
+  - Implemented early stage of pet getting older
 - 0.2
   - Updated README.md
 - 0.1
