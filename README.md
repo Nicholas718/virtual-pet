@@ -20,6 +20,8 @@ Gibbly the virtual pet!
 
 ## Version History
 
+- 0.31
+  - I have added a feature for hunger and fitness when pet ages
 - 0.3
   - Implemented early stage of pet getting older
 - 0.2
