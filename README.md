@@ -20,6 +20,8 @@ Gibbly the virtual pet!
 
 ## Version History
 
+- 0.32
+  - I have added a walk fuction allowing users to increase pet fitness
 - 0.31
   - I have added a feature for hunger and fitness when pet ages
 - 0.3
