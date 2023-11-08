@@ -1,4 +1,5 @@
 const MAXIMUM_FITNESS = 10;
+const MAXIMUM_HUNGER = 0;
 
 function Pet(name) {
   this.name = name;
@@ -9,6 +10,13 @@ function Pet(name) {
     this.age += 1;
     this.hunger += 5;
     this.fitness -= 3;
+  };
+  this.feedPet = function () {
+    if (this.hunger - 3 >= 0) {
+      this.hunger -= 3;
+    } else {
+      this.hunger = 0;
+    }
   };
 }
 

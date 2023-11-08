@@ -20,6 +20,8 @@ Gibbly the virtual pet!
 
 ## Version History
 
+- 0.33
+  - I have added a feeding fuction allowing users to feed their pet
 - 0.32
   - I have added a walk fuction allowing users to increase pet fitness
 - 0.31
