@@ -20,6 +20,8 @@ Gibbly the virtual pet!
 
 ## Version History
 
+- 0.4
+  - Added pet death if the following is met... age over 30, hunger exseeds 10 and if fitness reaches 0
 - 0.34
   - New feature! Your pet will now tell you if it's hungry or needs to go for a walk
 - 0.33

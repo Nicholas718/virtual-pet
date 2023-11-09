@@ -14,6 +14,9 @@ function Pet(name) {
   this.feedPet = function () {
     if (this.hunger - 3 >= 0) {
       this.hunger -= 3;
+    }
+    if (!this.isAlive) {
+      throw new Error("Your pet is no longer alive :(");
     } else {
       this.hunger = 0;
     }
@@ -21,11 +24,13 @@ function Pet(name) {
 }
 
 Pet.prototype.walk = function () {
+  if (!this.isAlive) {
+    throw new Error("Your pet is no longer alive :(");
+  }
   if (this.fitness + 4 <= 10) {
     this.fitness += 4;
-  } else {
-    this.fitness = 10;
   }
+  if (this.fitness > MAXIMUM_FITNESS) this.fitness = MAXIMUM_FITNESS;
 };
 
 Pet.prototype.checkUp = function () {
@@ -37,9 +42,16 @@ Pet.prototype.checkUp = function () {
   }
   if (this.hunger >= 5) {
     return "I am hungry";
+  }
+  if (!this.isAlive) {
+    throw new Error("Your pet is no longer alive :(");
   } else {
     return "I feel great";
   }
+};
+
+Pet.prototype.isAlive = function () {
+  return this.age < 30 && this.hunger < 10 && this.fitness > 0;
 };
 
 module.exports = Pet;

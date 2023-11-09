@@ -18,3 +18,13 @@ describe("walk", () => {
     expect(pet.fitness).toEqual(8);
   });
 });
+
+describe("feed", () => {
+  it("throws an error if the pet is not alive", () => {
+    const pet = new Pet("Gibbly");
+
+    pet.age = 30;
+
+    expect(pet.feed()).toThrow("Your pet is no longer alive :(");
+  });
+});
