@@ -28,4 +28,18 @@ Pet.prototype.walk = function () {
   }
 };
 
+Pet.prototype.checkUp = function () {
+  if (this.fitness <= 3 && this.hunger >= 5) {
+    return "I need walking and feeding";
+  }
+  if (this.fitness <= 3) {
+    return "I need a walk";
+  }
+  if (this.hunger >= 5) {
+    return "I am hungry";
+  } else {
+    return "I feel great";
+  }
+};
+
 module.exports = Pet;

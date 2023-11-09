@@ -20,6 +20,8 @@ Gibbly the virtual pet!
 
 ## Version History
 
+- 0.34
+  - New feature! Your pet will now tell you if it's hungry or needs to go for a walk
 - 0.33
   - I have added a feeding fuction allowing users to feed their pet
 - 0.32
