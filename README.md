@@ -20,6 +20,8 @@ Gibbly the virtual pet!
 
 ## Version History
 
+- 0.5
+  - Add baby and adopt function to pet
 - 0.4
   - Added pet death if the following is met... age over 30, hunger exseeds 10 and if fitness reaches 0
 - 0.34
